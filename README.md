@@ -1,4 +1,4 @@
-# 💊 Medicine Availability & Expiry Tracker
+# 💊 Medicine Availability & Expiry-Tracker
 
 **A digital solution for smarter pharmacy inventory management and medicine availability tracking.**
 
