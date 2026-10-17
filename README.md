@@ -116,7 +116,7 @@ To contribute:
 
 **Eliyas Siyum**
 
-Software Engineer | Backend Development | AI Enthusiast
+Software Engineer | Backend Development | AI Engineer
 
 GitHub: [@Eliyas47](https://github.com/Eliyas47)
 
