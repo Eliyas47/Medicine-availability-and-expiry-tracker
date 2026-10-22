@@ -1,7 +1,7 @@
 """
 Stock movement views.
 """
-from rest_framework import viewsets, status, filters
+from rest_framework import viewsets, mixins, status, filters
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
@@ -14,12 +14,18 @@ from apps.inventory.serializers import StockMovementSerializer
 from apps.inventory.services import perform_movement, approve_movement
 
 
-class StockMovementViewSet(viewsets.ReadOnlyModelViewSet):
+class StockMovementViewSet(
+    mixins.ListModelMixin,
+    mixins.RetrieveModelMixin,
+    mixins.CreateModelMixin,
+    viewsets.GenericViewSet,
+):
     """
-    Stock movements are append-only.
-    - List/Retrieve: pharmacy members
-    - Create: POST via /api/movements/ (custom action)
-    - Approve correction: POST /api/movements/{id}/approve/
+    Stock movements are append-only (no update, no delete).
+    - GET  /api/movements/       — list movements for user's pharmacy
+    - POST /api/movements/       — record a new movement
+    - GET  /api/movements/{id}/  — movement detail
+    - POST /api/movements/{id}/approve/ — approve a pending correction
     """
     serializer_class = StockMovementSerializer
     filter_backends = [DjangoFilterBackend, filters.OrderingFilter]

@@ -1,2 +1,6 @@
 ﻿from django.urls import path
-urlpatterns = []
+from .views.availability_views import AvailabilitySearchView
+
+urlpatterns = [
+    path("", AvailabilitySearchView.as_view(), name="availability-search"),
+]
