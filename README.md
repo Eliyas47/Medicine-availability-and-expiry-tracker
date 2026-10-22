@@ -1,4 +1,4 @@
-# 💊 Medicine Availability & Expiry Tracker
+# 💊 Medicine Availability & Expiry Tracker !
 
 A full-stack pharmacy inventory and availability platform built for Ethiopian pharmacy operations.
 
