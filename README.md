@@ -263,9 +263,9 @@ Once the backend is running:
 ## Developer
 
 **Eliyas Siyum**  
-Software Engineer | Backend Development | AI Enthusiast  
+Software Engineer | Backend Development | AI Enthusiast 
 GitHub: [@Eliyas47](https://github.com/Eliyas47)
 
 ---
 
-*Building practical software to support better medicine inventory management and availability awareness in Ethiopia.*
+*Building practical software platform to support better medicine inventory management and availability awareness in Ethiopia.*
